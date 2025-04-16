@@ -1,6 +1,6 @@
 # 👋 ¡Hola! Soy Julian David Marulanda León
 
-<img align="right" width="250" height="auto" src="[URL A UNA IMAGEN O GIF TUYO O RELACIONADO CON CODIGO - OPCIONAL]">
+<img align="right" width="250" height="auto" src="[https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5cOEDU3qHCLxvlZqON5F3GO7h-HamOFI-zQ&s]">
 
 Soy un estudiante **Tecnólogo en Análisis y Desarrollo de Software** en el **SENA** (Manizales, Colombia), apasionado por la tecnología y el desarrollo de soluciones creativas. 👨‍💻
 
