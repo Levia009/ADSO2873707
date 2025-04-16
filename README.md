@@ -22,8 +22,3 @@ Actualmente estoy cursando mi segundo año y buscando activamente un **contrato 
 *   **LinkedIn:** www.linkedin.com/in/julian-marulanda-67069b354
 *   **Correo:** julianmarulanda009@gmail.com
 
----
-
-
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=TU_USUARIO_DE_GITHUB&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
-
