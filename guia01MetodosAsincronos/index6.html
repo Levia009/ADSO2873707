@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios Alimentos Colombia (API Ejemplo)</title>
+    <link rel="stylesheet" href="css/stylesMunicipios.css">
+</head>
+<body>
+
+    <h1>Precios Promedio de Alimentos por Municipio</h1>
+    <p>Datos de: <a href="https://www.datos.gov.co/resource/xdk5-pm3f.json" target="_blank">datos.gov.co</a></p>
+
+    <!-- Contenedor para la lista de elementos -->
+    <div id="data-container">
+        <p id="loading-message">Cargando datos desde la API...</p>
+        <!-- Aquí se insertarán los botones y la información básica -->
+    </div>
+
+    <!-- El Modal (inicialmente oculto) -->
+    <div id="modal-overlay" class="hidden"> <!-- Asegúrate de que la clase hidden esté aquí -->
+        <div id="modal-content">
+            <button id="close-modal-button" title="Cerrar">×</button>
+            <h2>Detalles del Registro</h2>
+            <div id="modal-data">
+                <!-- Aquí se insertarán los detalles completos del elemento -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/promesas/eje05_promesas.js"></script>
+</body>
+</html>

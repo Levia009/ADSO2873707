@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Datos personales</h1>
+        <form id="myForm">
+            <div class="form-group">
+                <label for="txtNombre">Nombre</label>
+                <input type="text" name="txtNombre" id="txtNombre">
+            </div>
+            <div class="form-group">
+                <label for="txtEdad">Edad</label>
+                <input type="number" name="txtEdad" id="txtEdad">
+            </div>
+            <div class="form-group">
+                <label for="txtTelefono">Telefono</label>
+                <input type="tel" name="txtTelefono" id="txtTelefono">
+            </div>
+            <button type="submit" class="btnEnviar">Enviar</button>
+            <div class="form-group result" id="resultado">
+
+            </div>
+        </form>
+    </div>
+    <script src="js/promesas/eje02_promesas.js"></script>
+</body>
+</html>

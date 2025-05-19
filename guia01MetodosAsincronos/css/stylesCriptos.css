@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    color: #005ea6; /* Un azul oscuro */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#crypto-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.crypto-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    display: flex; /* Para alinear elementos */
+    justify-content: space-between; /* Espacio entre nombre y precio/cambio */
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilo para el último item para que no tenga borde inferior */
+.crypto-item:last-child {
+    border-bottom: none;
+}
+
+.crypto-item h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.crypto-item .symbol {
+    font-size: 0.9em;
+    color: #777;
+    margin-left: 8px;
+}
+
+.crypto-details {
+   text-align: right; /* Alinear detalles a la derecha */
+}
+
+
+.crypto-item .price {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #000;
+    display: block; /* Para que el cambio esté debajo */
+    margin-bottom: 5px;
+}
+
+.crypto-item .change {
+    font-size: 0.9em;
+}
+
+.positive {
+    color: #28a745; /* Verde */
+}
+
+.negative {
+    color: #dc3545; /* Rojo */
+}
+
+#loading {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}

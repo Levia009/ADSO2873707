@@ -1,0 +1,124 @@
+/* Estilos generales del body (centrado) */
+body {
+    display: flex;
+    flex-direction: column; /* Organiza hijos verticalmente */
+    min-height: 100vh; /* Asegura altura mínima */
+    justify-content: center; /* Centra el container verticalmente */
+    align-items: center; /* Centra el container horizontalmente */
+    font-family: sans-serif;
+    background-color: #f4f7f6; /* Un fondo suave */
+    padding: 1rem; /* Espacio por si el contenido es muy grande */
+    box-sizing: border-box;
+}
+
+/* Estilos del contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column; /* Hijos (filtros y tabla) en columna */
+    align-items: stretch; /* Estira los hijos para que ocupen el ancho */
+    border-radius: .5rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem; /* Más padding vertical */
+    width: 90%;
+    max-width: 1000px; /* Un ancho máximo más razonable */
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+}
+
+/* Estilos para la sección del filtro (select) */
+.headerFilters {
+    margin-bottom: 1.5rem; /* Espacio debajo del select */
+    display: flex; /* Para alinear label y select si es necesario */
+    flex-direction: column; /* Label encima del select */
+    gap: 0.5rem; /* Espacio entre label y select */
+}
+
+.headerFilters label {
+    font-weight: bold;
+    color: #333;
+}
+
+#slCountries { /* Estilo específico para el select */
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    width: 100%; /* Ocupa todo el ancho disponible en headerFilters */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho */
+    cursor: pointer;
+}
+
+/* Estilos para la sección del contenido (tabla) */
+.content {
+    overflow-x: auto; /* Permite scroll horizontal si la tabla es muy ancha */
+}
+
+/* Estilos básicos de la tabla */
+#countriesData {
+    border-collapse: collapse; /* Une los bordes de las celdas */
+    width: 100%; /* Asegura que use el ancho disponible */
+    margin-top: 0; /* Ya hay margen en headerFilters */
+}
+
+#countriesData th,
+#countriesData td {
+    border: 1px solid #ddd; /* Bordes más suaves */
+    padding: 0.75rem; /* Buen padding */
+    text-align: left; /* Alineación estándar */
+    vertical-align: middle; /* Alinear verticalmente al centro */
+}
+
+#countriesData th {
+    background-color: #e9ecef; /* Fondo gris claro para encabezados */
+    font-weight: bold;
+    color: #495057;
+}
+
+#countriesData tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Rayado para filas pares */
+}
+
+#countriesData tbody tr:hover {
+    background-color: #e2e6ea; /* Efecto hover */
+}
+
+/* Estilo para la celda de mensajes (Seleccione..., Cargando..., Error...) */
+#countriesData td[colspan="7"] {
+    text-align: center;
+    font-style: italic;
+    color: #6c757d; /* Gris */
+    background-color: #fff !important; /* Sobrescribir el rayado */
+}
+#countriesData td[style*="color: red"] { /* Estilo específico para errores */
+     font-weight: bold;
+     color: #dc3545 !important; /* Rojo Bootstrap */
+}
+
+
+/* Estilo para la imagen de la bandera */
+.country-flag {
+    max-width: 50px; /* Ancho máximo */
+    height: auto;   /* Altura automática para mantener proporción */
+    display: block; /* Evita espacio extra debajo */
+    border: 1px solid #eee; /* Borde sutil */
+}
+
+/* Estilo para el enlace del mapa */
+#countriesData a {
+    color: #007bff; /* Azul enlace estándar */
+    text-decoration: none; /* Sin subrayado */
+}
+
+#countriesData a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* -- Reglas CSS eliminadas que no se usaban -- */
+/*
+.container button{ ... }
+.container button:hover{ ... }
+.form-group{ ... }
+.form-group input{ ... }
+.result{ ... }
+@keyframes gradient { ... }
+*/

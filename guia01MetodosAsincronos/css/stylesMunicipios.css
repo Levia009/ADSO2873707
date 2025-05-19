@@ -1,0 +1,172 @@
+/* ... (Estilos anteriores: body, h1, p, a, #data-container, etc.) ... */
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fa; /* Un gris muy claro */
+    color: #343a40; /* Un gris oscuro */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #007bff; /* Azul primario */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 0.9em;
+    color: #6c757d; /* Gris secundario */
+}
+
+a {
+    color: #0056b3; /* Azul más oscuro para enlaces */
+}
+
+#data-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#loading-message {
+    text-align: center;
+    font-style: italic;
+    color: #6c757d;
+}
+
+.data-item {
+    border-bottom: 1px solid #dee2e6; /* Gris claro para borde */
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px; /* Espacio entre texto y botón */
+}
+
+.data-item:last-child {
+    border-bottom: none;
+}
+
+.item-info {
+    flex-grow: 1; /* Para que ocupe el espacio restante */
+}
+
+.item-info span {
+    display: block; /* Poner cada parte en una línea */
+    font-size: 0.9em;
+    color: #495057;
+}
+
+.item-info strong {
+    font-size: 1.1em;
+    color: #212529; /* Negro suave */
+}
+
+.details-button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease;
+    white-space: nowrap; /* Evita que el texto del botón se parta */
+}
+
+.details-button:hover {
+    background-color: #0056b3;
+}
+
+/* --- Estilos del Modal --- */
+
+.hidden {
+    display: none !important; /* Usamos !important para asegurarnos que se oculte */
+}
+
+#modal-overlay {
+    position: fixed; /* Se queda fijo en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    /* display: flex;  QUITAMOS el display:flex inicial, se controla con la clase 'hidden' */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de todo */
+    padding: 20px; /* Espacio por si el modal es grande */
+    box-sizing: border-box;
+}
+
+/* Añadimos un estilo para cuando el modal SÍ está visible */
+#modal-overlay:not(.hidden) {
+    display: flex;
+}
+
+
+#modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px; /* Ancho máximo del modal */
+    width: 90%; /* Ocupa el 90% del ancho disponible */
+    max-height: 80vh; /* Altura máxima del modal */
+    overflow-y: auto; /* Scroll si el contenido es muy largo */
+    position: relative; /* Para posicionar el botón de cerrar */
+}
+
+#modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #343a40;
+    text-align: left;
+}
+
+#close-modal-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #6c757d;
+    cursor: pointer;
+    line-height: 1; /* Ajuste para mejor alineación vertical */
+    padding: 0;
+    z-index: 1001; /* Asegurarse que esté sobre el contenido del modal si hay mucho */
+}
+
+#close-modal-button:hover {
+    color: #343a40;
+}
+
+#modal-data p {
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    font-size: 1em;
+    color: #333;
+}
+
+#modal-data p:last-child {
+    border-bottom: none;
+}
+
+#modal-data strong {
+    color: #0056b3;
+    min-width: 150px; /* Asegura un ancho mínimo para las etiquetas */
+    display: inline-block; /* Permite aplicar ancho */
+    margin-right: 10px;
+}
